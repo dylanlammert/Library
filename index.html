@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="contentContainer">
+        <div class="headInfo">
+            <h1>My Library</h1>
+        </div>
+        <div class="libraryGrid">
+            <!-- Container for all of the books to be displayed-->
+        </div>
+            <!-- Modal for adding a new book -->
+        <dialog class="modal">
+            <div class="formHeader">
+            </div>
+            <form class="column">
+                <div class="column">
+                    <label>Book Title</label>
+                    <input id="bookTitle" type="text">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label>Author</label>
+                        <input id="author" type="text">
+                    </div>
+                    <div class="column">
+                        <label>Page Count</label>
+                        <input id="pageCount" type="number">
+                    </div>
+                </div>
+                <button type="submit">Add Book</button>
+            </form>
+            
+        </dialog>
+
+        <button id="newBookButton" class="newBookButton">
+            <h1 style="font-size: 40px; color:white;">+</h1>
+        </button>
+        
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

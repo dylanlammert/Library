@@ -1,0 +1,81 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.headInfo {
+    display: flex;
+    align-items: end;
+    background-color: rgb(202, 201, 201);
+    width:100%;
+    height:100px;
+    color: white;
+    padding: 16px;
+    border-bottom: 1px solid black;
+}
+
+.libraryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+.bookCard {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    width: 100%;
+    height: fit-content;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 16px;
+}
+
+form {
+    gap: 16px;
+    padding: 32px;
+}
+.formHeader {
+    height: 75px;
+    background-image:url(./ChatGPT\ Image\ Oct\ 15\,\ 2025\,\ 06_29_25\ PM.png);
+}
+input {
+    height: 24px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px
+}
+
+.column {
+    display:flex;
+    flex-direction: column;
+}
+
+.newBookButton {
+    display:flex;
+    background-color: grey;
+    position: absolute;
+    border-radius: 75px;
+    height: 75px;
+    width:75px;
+    bottom: 20px;
+    right:20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 32px;
+    border-radius: 25px;
+}
+
+.newBookButton:hover {
+    background-color: rgb(60, 60, 60);
+}
